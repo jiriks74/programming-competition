@@ -2,7 +2,7 @@
 <!-- Generated with glade 3.38.2 -->
 <interface>
   <requires lib="gtk+" version="3.24"/>
-  <object class="GtkWindow" id="MainWindow">
+  <object class="GtkWindow" id="mainWindow">
     <property name="width-request">200</property>
     <property name="height-request">300</property>
     <property name="can-focus">False</property>
@@ -12,7 +12,7 @@
         <property name="visible">True</property>
         <property name="can-focus">False</property>
         <child>
-          <object class="GtkDrawingArea" id="pedestGreen">
+          <object class="GtkDrawingArea" id="carRed">
             <property name="width-request">100</property>
             <property name="height-request">100</property>
             <property name="visible">True</property>
@@ -48,19 +48,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkDrawingArea" id="pedestRed">
-            <property name="width-request">100</property>
-            <property name="height-request">100</property>
-            <property name="visible">True</property>
-            <property name="can-focus">False</property>
-          </object>
-          <packing>
-            <property name="left-attach">1</property>
-            <property name="top-attach">0</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkDrawingArea" id="carRed">
+          <object class="GtkDrawingArea" id="pedestGreen">
             <property name="width-request">100</property>
             <property name="height-request">100</property>
             <property name="visible">True</property>
@@ -90,7 +78,7 @@
             </child>
             <child>
               <object class="GtkButton" id="playButton">
-                <property name="label" translatable="yes">button</property>
+                <property name="label" translatable="yes">Play</property>
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
@@ -117,6 +105,18 @@
           </object>
           <packing>
             <property name="left-attach">0</property>
+            <property name="top-attach">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkDrawingArea" id="pedestRed">
+            <property name="width-request">100</property>
+            <property name="height-request">100</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+          </object>
+          <packing>
+            <property name="left-attach">1</property>
             <property name="top-attach">0</property>
           </packing>
         </child>

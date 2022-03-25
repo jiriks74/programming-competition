@@ -7,69 +7,124 @@
     <property name="height-request">300</property>
     <property name="can-focus">False</property>
     <child>
-      <!-- n-columns=2 n-rows=3 -->
-      <object class="GtkGrid">
+      <!-- n-columns=3 n-rows=3 -->
+      <object class="GtkGrid" id="grid">
         <property name="visible">True</property>
         <property name="can-focus">False</property>
         <child>
-          <object class="GtkDrawingArea">
+          <object class="GtkDrawingArea" id="carRed">
             <property name="width-request">100</property>
             <property name="height-request">100</property>
             <property name="visible">True</property>
             <property name="can-focus">False</property>
           </object>
           <packing>
-            <property name="left-attach">0</property>
+            <property name="left-attach">2</property>
             <property name="top-attach">0</property>
           </packing>
         </child>
         <child>
-          <object class="GtkDrawingArea">
+          <object class="GtkDrawingArea" id="carOrange">
             <property name="width-request">100</property>
             <property name="height-request">100</property>
             <property name="visible">True</property>
             <property name="can-focus">False</property>
           </object>
           <packing>
-            <property name="left-attach">1</property>
-            <property name="top-attach">0</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkDrawingArea">
-            <property name="width-request">100</property>
-            <property name="height-request">100</property>
-            <property name="visible">True</property>
-            <property name="can-focus">False</property>
-          </object>
-          <packing>
-            <property name="left-attach">0</property>
+            <property name="left-attach">2</property>
             <property name="top-attach">1</property>
           </packing>
         </child>
         <child>
-          <object class="GtkDrawingArea">
+          <object class="GtkDrawingArea" id="carGreen">
             <property name="width-request">100</property>
             <property name="height-request">100</property>
             <property name="visible">True</property>
             <property name="can-focus">False</property>
           </object>
           <packing>
-            <property name="left-attach">1</property>
-            <property name="top-attach">1</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkDrawingArea">
-            <property name="width-request">100</property>
-            <property name="height-request">100</property>
-            <property name="visible">True</property>
-            <property name="can-focus">False</property>
-          </object>
-          <packing>
-            <property name="left-attach">1</property>
+            <property name="left-attach">2</property>
             <property name="top-attach">2</property>
           </packing>
+        </child>
+        <child>
+          <object class="GtkDrawingArea" id="pedestGreen">
+            <property name="width-request">100</property>
+            <property name="height-request">100</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+          </object>
+          <packing>
+            <property name="left-attach">1</property>
+            <property name="top-attach">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButtonBox">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="orientation">vertical</property>
+            <property name="layout-style">start</property>
+            <child>
+              <object class="GtkLabel" id="countdownPedest">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="playButton">
+                <property name="label" translatable="yes">Play</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="pausButton">
+                <property name="label" translatable="yes">button</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="left-attach">0</property>
+            <property name="top-attach">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkDrawingArea" id="pedestRed">
+            <property name="width-request">100</property>
+            <property name="height-request">100</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+          </object>
+          <packing>
+            <property name="left-attach">1</property>
+            <property name="top-attach">0</property>
+          </packing>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
         </child>
         <child>
           <placeholder/>
