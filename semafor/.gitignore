@@ -1,0 +1,7 @@
+# .NET build directories
+bin
+obj
+
+
+# Visual Studio Code config
+.vscode

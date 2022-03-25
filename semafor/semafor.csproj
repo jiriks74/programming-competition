@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="GtkSharp" Version="3.24.24.*"/>
+    <PackageReference Include="CairoSharp" Version="3.24.24.34"/>
+    <PackageReference Include="GdkSharp" Version="3.24.24.34"/>
+    <PackageReference Include="cairo" Version="1.12.18"/>
+    <Content Include="Program.cs"/>
+    <Content Include="ui\MainWindow.cs"/>
+    <EmbeddedResource Include="ui\MainWindow.glade"/>
+  </ItemGroup>
+</Project>
